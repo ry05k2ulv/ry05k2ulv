@@ -1,0 +1,29 @@
+name: Generate Picture and Push to output branch
+
+on:
+    push:
+        branches:
+            - main
+
+jobs:
+    generate:
+        runs-on: ubuntu-24.04
+
+        steps:
+          - name: Checkout
+            uses: actions/checkout@v4
+
+          - name: Generate Picture
+            uses: ry05k2ulv/grassland@main
+            with:
+                github_username: ${{ github.repository_owner }}
+                github_token: ${{ secrets.GITHUB_TOKEN }}
+
+          - name: Push output image to output branch
+            uses: crazy-max/ghaction-github-pages@v4
+            with:
+                target_branch: output
+                build_dir: dist
+                commit_message: "Generate Output Image"
+            env:
+                GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
