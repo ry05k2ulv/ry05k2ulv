@@ -1,4 +1,3 @@
-## Hi there 👋
 
 <!--
 **ry05k2ulv/ry05k2ulv** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
@@ -14,3 +13,6 @@ Here are some ideas to get you started:
 - 😄 Pronouns: ...
 - ⚡ Fun fact: ...
 -->
+
+<h3 align="center">3D Contributions</h2>
+<img src="https://raw.githubusercontent.com/ry05k2ulv/ry05k2ulv/refs/heads/output/output.png">
